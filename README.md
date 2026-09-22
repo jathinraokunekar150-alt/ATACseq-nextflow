@@ -90,6 +90,8 @@ The original workflow was implemented in Bash and covers the complete ATAC-seq a
 - DeepTools
 - MultiQC
 
+**[View Bash pipeline →](bash/atac_seq_pipeline.sh)**
+
 ### Nextflow Version
 
 The Bash workflow was converted into a modular Nextflow workflow to improve workflow organization, process separation, and reproducibility.
@@ -103,6 +105,8 @@ The Nextflow implementation contains seven main processes:
 5. MACS2
 6. DeepTools
 7. MultiQC
+
+**[View Nextflow pipeline →](nextflow/atac_seq_pipeline.nf)**
 
 ## Computational Environment
 
@@ -154,12 +158,16 @@ multiqc_report/
 | MACS2 peaks | **32,738** |
 | MACS2 fragment length | **124 bp** |
 | Input reads per mate | **~8.9 million** |
+### Validation Report
+
+**[View MultiQC validation report →](results/nf_multiqc_report.html)**
 
 ## Genome Browser Visualization
 
 The resulting BigWig coverage track and MACS2 peak calls were visualized in **IGV** against the hg38 reference genome.
 
 ![ATAC-seq IGV visualization](assets/igv_visualization.png)
+**[Open full-size IGV visualization →](assets/igv_visualization.png)**
 
 ## Reproducibility
 
@@ -170,6 +178,33 @@ nextflow run nextflow/atac_seq_pipeline.nf
 ```
 
 The workflow expects the required paired FASTQ files and reference/index resources to be available in the configured environment.
+
+## Project Documentation
+
+- **[ATAC-seq Pipeline Overview →](docs/ATACseq_Pipeline_Overview.pdf)**
+- **[Nextflow pipeline →](nextflow/atac_seq_pipeline.nf)**
+- **[Bash pipeline →](bash/atac_seq_pipeline.sh)**
+- **[MultiQC validation report →](results/nf_multiqc_report.html)**
+- **[IGV visualization →](assets/igv_visualization.png)**
+
+## Repository Structure
+
+```text
+ATACseq-nextflow/
+├── README.md
+├── .gitignore
+├── bash/
+│   └── atac_seq_pipeline.sh
+├── nextflow/
+│   └── atac_seq_pipeline.nf
+├── assets/
+│   ├── README.md
+│   └── igv_visualization.png
+├── docs/
+│   └── ATACseq_Pipeline_Overview.pdf
+└── results/
+    └── nf_multiqc_report.html
+```
 
 ## Notes
 
