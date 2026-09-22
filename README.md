@@ -158,9 +158,14 @@ multiqc_report/
 | MACS2 peaks | **32,738** |
 | MACS2 fragment length | **124 bp** |
 | Input reads per mate | **~8.9 million** |
+
 ### Validation Report
 
-**[View MultiQC validation report →](results/nf_multiqc_report.html)**
+The pipeline generated an interactive MultiQC report summarizing sequencing quality, trimming, and alignment metrics.
+
+**[View the live MultiQC validation report →](https://jathinraokunekar150-alt.github.io/ATACseq-nextflow/results/nf_multiqc_report.html)**
+
+A copy of the generated HTML report is also retained in [`results/`](results/).
 
 ## Genome Browser Visualization
 
@@ -184,7 +189,7 @@ The workflow expects the required paired FASTQ files and reference/index resourc
 - **[ATAC-seq Pipeline Overview →](docs/ATACseq_Pipeline_Overview.pdf)**
 - **[Nextflow pipeline →](nextflow/atac_seq_pipeline.nf)**
 - **[Bash pipeline →](bash/atac_seq_pipeline.sh)**
-- **[MultiQC validation report →](results/nf_multiqc_report.html)**
+- **[View live MultiQC validation report →](https://jathinraokunekar150-alt.github.io/ATACseq-nextflow/results/nf_multiqc_report.html)**
 - **[IGV visualization →](assets/igv_visualization.png)**
 
 ## Repository Structure
