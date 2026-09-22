@@ -1,0 +1,46 @@
+# Nextflow
+.nextflow/
+.nextflow.log*
+work/
+
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment / sequencing files
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+
+# Coverage tracks
+*.bw
+*.bigWig
+
+# Large / generated intermediate files
+trimmed_data/
+aligned_data/
+filtered_data/
+raw_data/
+
+# Temporary QC output
+qc_reports/
+
+# General logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Conda environments
+.conda/
+
+# OS files
+.DS_Store
+Thumbs.db
